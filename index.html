@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <title>个人主页 | Portfolio</title>
+    <meta
+      name="description"
+      content="祝翔宇（Zhu Xiangyu）的个人主页：学术背景、开源项目、发展历程与联系方式。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+
+    <div class="page">
+      <header class="topbar glass">
+        <a class="brand" href="#top">祝翔宇 · 个人主页</a>
+        <nav class="menu">
+          <a href="#about">关于我</a>
+          <a href="#works">项目与研究</a>
+          <a href="#timeline">经历</a>
+          <a href="#contact">联系</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero glass reveal" data-delay="0">
+          <div class="intro">
+            <p class="eyebrow">Computational neuroscience / AI</p>
+            <h1>你好，我是 <span class="emph">祝翔宇</span></h1>
+            <p class="subtitle">
+              我会把研究和工程放在同一个作品页里，用项目讲述真实成果：
+              从实验思路、模型实验到开源实现，清晰、可复现、持续更新。
+            </p>
+
+            <ul class="facts">
+              <li>📍 中国 / Changsha</li>
+              <li>🎓 计算神经科学方向</li>
+              <li>📧 点击下方添加你的邮箱</li>
+              <li>🐦 X / Twitter: <a href="https://x.com/Xiangyu14070615" target="_blank" rel="noopener noreferrer">@Xiangyu14070615</a></li>
+            </ul>
+
+            <div class="cta">
+              <a href="mailto:" class="btn btn-primary">发邮件</a>
+              <a href="#works" class="btn btn-secondary">查看项目</a>
+              <a
+                href="https://github.com/Xiangyu-CAS"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-ghost"
+                >GitHub</a
+              >
+            </div>
+
+            <div class="stats">
+              <article>
+                <h3><span data-counter="120">0</span>+</h3>
+                <p>GitHub 代码提交</p>
+              </article>
+              <article>
+                <h3><span data-counter="14">0</span></h3>
+                <p>开源项目</p>
+              </article>
+              <article>
+                <h3><span data-counter="8">0</span></h3>
+                <p>论文与投稿</p>
+              </article>
+            </div>
+          </div>
+
+          <aside class="avatar-wrap" aria-label="个人头像">
+            <div class="avatar">
+              <img
+                src="assets/%E7%9C%9F%E4%BA%BA%E5%A4%B4%E5%83%8F.jpg"
+                alt="祝翔宇头像"
+                loading="lazy"
+              />
+            </div>
+          </aside>
+        </section>
+
+        <section id="about" class="section reveal" data-delay="120">
+          <h2>关于我</h2>
+          <p class="section-intro">
+            我正在建设一个“研究 + 工程”一体化主页，包含项目卡片、技术栈、时间线与论文展示。你可以把每个卡片替换成你的真实项目进展、链接和简历文档。
+          </p>
+          <div class="grid-2">
+            <article class="card">
+              <h3>GitHub 活动</h3>
+              <p>追踪开源仓库和持续迭代，近期聚焦于神经生理分析、自动化爬虫和实验数据处理工具。</p>
+              <a href="https://github.com/Xiangyu-CAS" target="_blank" rel="noopener noreferrer">查看详情 →</a>
+            </article>
+            <article class="card">
+              <h3>学术影响</h3>
+              <p>整合论文、投稿与公开分享内容，形成「问题 - 方法 - 结果 - 复现」的全流程记录。</p>
+              <a
+                href="https://scholar.google.com/citations?user=ZwZ68W4AAAAJ&hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                >查看 Google Scholar →</a
+              >
+            </article>
+          </div>
+        </section>
+
+        <section id="works" class="section reveal" data-delay="220">
+          <h2>项目与研究</h2>
+          <p class="section-intro">
+            以下卡片可直接替换成你自己的仓库与技术栈。
+          </p>
+
+          <div class="masonry">
+            <article class="card project">
+              <div class="chip">项目</div>
+              <h3>interactive-cap-analyzer</h3>
+              <p>分析睡眠 EEG 中 CAP 模式的交互式工具，支持可视化和批量统计。</p>
+              <div class="tags">
+                <span>MATLAB</span>
+                <span>EEG</span>
+                <span>Sleep Analysis</span>
+              </div>
+              <a href="https://github.com/Xiangyu-CAS/interactive-cap-analyzer" target="_blank" rel="noopener noreferrer">GitHub 仓库</a>
+            </article>
+
+            <article class="card project">
+              <div class="chip">项目</div>
+              <h3>tech-info-crawler</h3>
+              <p>聚合 AI、Biotech、创业和 VC 行业最新动态，便于团队快速跟踪行业线索。</p>
+              <div class="tags">
+                <span>Python</span>
+                <span>Scraping</span>
+                <span>Automation</span>
+              </div>
+              <a href="https://github.com/Xiangyu-CAS/tech-info-crawler" target="_blank" rel="noopener noreferrer">GitHub 仓库</a>
+            </article>
+
+            <article class="card project">
+              <div class="chip">技术栈</div>
+              <h3>Tools & Technologies</h3>
+              <p>用于主页展示、实验复现实验与数据处理的常用技术。</p>
+              <div class="tags">
+                <span>Python</span>
+                <span>PyTorch</span>
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Tailwind</span>
+                <span>Docker</span>
+              </div>
+            </article>
+
+            <article class="card paper">
+              <div class="chip primary">最新论文</div>
+              <p class="meta">Molecular Psychiatry (2025)</p>
+              <h3>
+                Loss of Prader–Willi protein Necdin leads to increased
+                excitation–inhibition ratio and social deficit in mice
+              </h3>
+              <p>展示社交行为缺陷相关机制：阐明 Necdin 缺失导致 E/I 比例失衡与行为改变。</p>
+              <a href="#" target="_self">论文链接 →</a>
+            </article>
+          </div>
+        </section>
+
+        <section id="timeline" class="section reveal" data-delay="320">
+          <h2>发展历程</h2>
+          <p class="section-intro">
+            时间线可直接用于放置教育背景与实习/项目经历。
+          </p>
+
+          <div class="timeline card">
+            <div class="item">
+              <span>2029</span>
+              <div>
+                <h3>PhD / 计算科学方向</h3>
+              <p>待补充 · 研究生</p>
+              </div>
+            </div>
+            <div class="item">
+              <span>2025</span>
+              <div>
+                <h3>实习 / AI 方向</h3>
+                <p>待补充 · 项目实习</p>
+              </div>
+            </div>
+            <div class="item">
+              <span>2023</span>
+              <div>
+                <h3>技术方向负责人</h3>
+                <p>待补充</p>
+              </div>
+            </div>
+            <div class="item">
+              <span>2018</span>
+              <div>
+                <h3>本科毕业</h3>
+                <p>待补充 · 本科</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="section reveal" data-delay="420">
+          <div class="card contact">
+            <h2>Let's Connect</h2>
+            <p>始终欢迎交流 neuroscience / AI / 工程实践与合作机会。</p>
+            <div class="cta">
+              <a href="mailto:" class="btn btn-primary">Email Me</a>
+              <a href="/resume.pdf" class="btn btn-secondary">下载简历</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        © 2026 祝翔宇 · Built with HTML/CSS/JS
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
